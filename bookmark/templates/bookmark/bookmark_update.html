@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Confirm update{% endblock %}
+{% block content %}
+   <form action="" method="post">
+       {% csrf_token %}#csrt 공격을 방어하기 위한 코드
+       {{form.as_p}}
+          <input type="submit" value="Update" class="btn btn-info btn-sm">
+
+   </form>
+{% endblock %}
